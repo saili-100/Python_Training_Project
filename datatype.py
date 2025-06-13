@@ -2,14 +2,14 @@
 # String Integer Float Boolean Complex List Tuple Set Dictionary None 
 a = None #Nothing 
 # Checking data type type syantx type(Variable name)
-print(type(a))
+# print(type(a))
 
 # range
-x = range(2,6) 
-print(x)
-print(type(x))
-for i in x:
-    print(i)
+# x = range(2,6) 
+# print(x)
+# print(type(x))
+# for i in x:
+#     print(i)
 
 # String
 name = "Saili"
@@ -36,13 +36,21 @@ my_set = {10,20,30,40,(9,8,7,-6)}
 my_dict = {1:"Saili",2:"Pooja",3:"Suraj"}
 
 # Boolean 
-my_boolean = True
+my_boolean = True 
 
-print(f"{num} I am integer")
-print(f"{num1} I am float")
-print(f"{num2} I am complex")
-print(f"{my_list} I am list")
-print(f"{my_tuple} I am tuple")
-print(f"{my_set} I am set")
-print(f"{my_dict} I am dictionary")
-print(f"{my_boolean} I am boolean")
+result = [name,num,num1,num2,my_list,my_tuple,my_set,my_dict,my_boolean]
+
+data_type=["string","integer","float","complex","list","tuple","set","dictionary","boolean"]
+
+for i in range(len(result)):
+    print(f"{result[i]} I am {data_type[i]} ")
+
+# print(f"{name} I am string")
+# print(f"{num} I am integer")
+# print(f"{num1} I am float")
+# print(f"{num2} I am complex")
+# print(f"{my_list} I am list")
+# print(f"{my_tuple} I am tuple")
+# print(f"{my_set} I am set")
+# print(f"{my_dict} I am dictionary")
+# print(f"{my_boolean} I am boolean")
