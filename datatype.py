@@ -41,10 +41,12 @@ my_boolean = True
 result = [name,num,num1,num2,my_list,my_tuple,my_set,my_dict,my_boolean]
 
 data_type=["string","integer","float","complex","list","tuple","set","dictionary","boolean"]
+data_type1=["string","integer","float","complex","list","tuple","set","dictionary","boolean"]
 
-for i in range(len(result)):
-    print(f"{result[i]} I am {data_type[i]} ")
-
+# for i in range(len(result)):
+#     print(f"{result[i]} I am {data_type[i]} ")
+for i,j,k in (zip(result,data_type,data_type1)): # same element size
+    print(i,j,k)
 # print(f"{name} I am string")
 # print(f"{num} I am integer")
 # print(f"{num1} I am float")
