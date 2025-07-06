@@ -20,3 +20,10 @@ lst.append(10)
 lst.extend(["Saili","Nikita"])
 print(lst)
 
+# nested list 
+list1 = [[1,2,3],[4,5,6],[7,8,9]]
+print(list1,"Nested list")
+print(list1[1][1])
+print(list1[2])
+for sublist in list1:
+    print(sublist,end="**")

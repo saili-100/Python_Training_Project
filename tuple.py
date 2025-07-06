@@ -38,5 +38,13 @@
 # print(f"List iteration time: {list_time:.5f} seconds")
 # print(f"Tuple iteration time: {tuple_time:.5f} seconds")
  
-tup=(20,)
-print(type(tup))
+# tup=(20,)
+# print(type(tup))
+
+t = (1,2,3,4,5)  
+# x,*y = t
+# x,y,*z = t
+x,*y,z = t
+print(x,type(x))
+print(y,type(y))
+print(z,type(z))
