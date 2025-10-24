@@ -86,10 +86,31 @@ def func_a():
 # fun_b(num = func_a) #pass reference not call
 
 # inner function 
+# def outer():
+#     def _inner():
+#         for i in range(5):
+#             print(i)
+#     _inner()
+#     print(_inner)
+# outer()
+
+# returning inner function reference from outer
+# returning inner function call from outer
 def outer():
+ 
     def _inner():
         for i in range(5):
             print(i)
-    _inner()
+        return "something"
+ 
+    _inner() # call
     print(_inner)
-outer()
+ 
+    # return _inner # returning reference to inner
+    return _inner()  # returning call to inner
+ 
+ 
+value = outer()
+print(type(value))
+ 
+# value()
